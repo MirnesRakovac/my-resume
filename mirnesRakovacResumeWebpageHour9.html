@@ -1,0 +1,255 @@
+<!--In this hour I added some flexbox to my contacts div, changed the font of a heading, created links to jump to specific 
+part of page and fixed some minor details-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+  box-sizing: border-box;
+}
+
+/*Seting font family to monospace and removing margings*/
+body {
+  font-family: "VT323", monospace;
+  color: green;
+  margin: 0;
+  background-color: black;
+}
+/*Navigation with divs*/
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  /*box-shadow: 0 4px 60px rgba(255, 255, 255, 0.568),
+    0 4px 6px rgba(255, 255, 255, 0.23);*/
+}
+
+/*First div - Div 1*/
+.nav-name {
+  width: 300px;
+}
+.nav-name p {
+  color: green;
+  font-size: 40px;
+  text-align: center;
+}
+/*Second div - Div 2*/
+.nav-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-links li {
+  padding: 23px;
+}
+.nav-links li:hover {
+  background-color: white;
+}
+
+/*a elements - Div 2*/
+.nav-links ul li a {
+  color: green;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/*hr style*/
+hr {
+  border-style: dashed;
+  height: 8px;
+  color: white;
+}
+
+/*Section-h element styling*/
+.about-me h1 {
+  font-size: 80px;
+  text-align: center;
+}
+section {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.about-me {
+  margin-top: 100px;
+
+  line-height: 30px;
+}
+
+.p-tag p {
+  font-size: 30px;
+  text-align: justify;
+  margin: auto;
+  margin-bottom: 40px;
+  width: 1000px;
+}
+
+/*skill div*/
+.skills {
+  color: rgb(179, 170, 170);
+}
+
+.skills h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+
+
+.skills h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.skills div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills div li {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+
+.socials ul{
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.socials li:hover{
+  background-color: green;
+}
+.socials a:hover{
+  color: black;
+}
+.socials  li a{
+  text-decoration: none;
+  color: white;
+  
+}
+#contact{
+  font-size: 80px;
+  
+}
+
+
+@media (max-width: 800px) {
+  .about-me h1 {
+    font-size: 40px;
+  }
+  .contact {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .p-tag p {
+    width: fit-content;
+  }
+
+}
+
+
+    </style>
+    <title>My resume</title>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="nav-bar">
+      <!--Title in nav bar-->
+      <div class="nav-name"><p>Mirnes Rakovac</p></div>
+      <!--Navigation links-->
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <hr />
+    <!--Main content-->
+    <section>
+      <div class="about-me">
+        <h1>W H O . . . AM I ??</h1>
+      </div>
+        <div class="p-tag">
+          
+          <p>
+            Hello, my name is Mirnes Rakovac and I am currently freshman year
+            of|| the Faculty of Natural Sciences and Mathematics in Tuzla. I am
+            currently an undergraduate student in the Department of Mathematics
+            - Mathematics and Computer Science. I am also a member of the
+            student association EESTEC LC Tuzla, where I like to volunteer. I
+            have also volunteered at many Let’s do it afforestation actions of
+            our community. I have always been inspired by technology and
+            science. Although to be honest I haven’t always been that way.
+            I never had anyone by my side to explain to me and point me in a
+            certain direction, but after a while I realized that I would never
+            know what was waiting for me on the other side unless I moved
+            forward. Later, it all grew into my great love for technology.
+          </p>
+        </div>
+        
+      </div>
+      <hr />
+      <div class="skills">
+        <h1  id="about">A little bit more about me...</h1>
+        <h2>EDUCATION</h2>
+        <div>
+          <ul>
+            <li>Primary school (2007-2016)</li>
+            <li>Nursing school (2016-2020)</li>
+            <li>Bachelor of Mathematics (2020-2024)</li>
+          </ul>
+        </div>
+        <h2>PROJECTS</h2>
+        <div>
+          <ul>
+            <li>EESTEC Project Marathon (2021)</li>
+            <br />
+            <li>EESTEC Project Marathon (2022)</li>
+            <br />
+            <li>Eco project - Green Tale</li>
+          </ul>
+        </div>
+        <h2>SKILLS</h2>
+        <div>
+          <ul>
+            <li>HTML</li>
+            <br />
+            <li>CSS</li>
+            <br />
+            <li>Python</li>
+            <br />
+            <li>C</li>
+          </ul>
+        </div>
+        <hr />
+        <h2 id="contact">Contact me</h2>
+        <div class="socials">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/mirnes-rakovac-336197219/">LINKEDIN</a></li>
+            <br />
+            <li><a href="https://www.facebook.com/mirnes.rakovac">FACEBOOK</a></li>
+            <br />
+            <li><a href="https://mail.google.com">Email:mirnes.rakovac@gmail.com</a></li>
+            <br />
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
